@@ -322,7 +322,7 @@ img{max-width:100%;height:auto;}
 
 /* Flashcards */
 .fc-card{width:220px;height:130px;border:1.5px solid var(--border);border-radius:var(--radius);background:var(--surface-2);
-  display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:2rem;color:var(--accent-hover);cursor:pointer;box-shadow:var(--shadow);margin:10px 0;}
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:var(--fs-lg);color:var(--accent-hover);cursor:pointer;box-shadow:var(--shadow);margin:10px 0;padding:14px;text-align:center;line-height:1.35;}
 .fc-controls{display:flex;align-items:center;gap:10px;}
 
 /* Kreuzworträtsel */
@@ -369,11 +369,11 @@ img{max-width:100%;height:auto;}
 <section class="phase on" id="ph0">
   <div class="card">
     <h2>Druck neu entdecken</h2>
-    <p>Ihr habt Druck schon berechnet, Einheiten umgerechnet und das Teilchenmodell kennengelernt. Bevor es weitergeht: Was ist eigentlich noch bei dir hängen geblieben?</p>
+    <p>Ihr habt Druck schon berechnet, Einheiten umgerechnet und das Teilchenmodell kennengelernt. Bevor es weitergeht: Was weißt du noch?</p>
 
     <div class="poe-box" id="poe-einstieg">
       <div class="poe-label">🤔 Was passiert wohl?</div>
-      <p>Erinnere dich an den Ballon-Versuch: Ein Luftballon wird über eine leere Plastikflasche gestülpt und die Flasche in warmes Wasser gestellt. Was passiert mit dem Ballon — und warum, wenn du an die Teilchen in der Luft denkst?</p>
+      <p>Erinnere dich an den Ballon-Versuch: Ein Luftballon wird über eine leere Plastikflasche gestülpt und die Flasche in warmes Wasser gestellt. Was geschieht mit dem Ballon, und wie lässt sich das mit dem Verhalten der Teilchen in der Luft erklären?</p>
       <textarea id="poe-einstieg-in" rows="2" placeholder="Deine Vermutung …"></textarea>
       <button class="btn btn-primary btn-sm" onclick="lockPredict('poe-einstieg')">Vermutung festhalten</button>
       <div class="poe-locked" id="poe-einstieg-out" hidden></div>
@@ -387,7 +387,7 @@ img{max-width:100%;height:auto;}
     </div>
 
     <div class="subphase on" id="ph0-sub-1">
-      <p>Der Ballon bläht sich auf. Das warme Wasser erwärmt die Luft in der Flasche — die <span class="tt" data-tip="Kleinste Bausteine von Gasen und Flüssigkeiten">Teilchen</span> bewegen sich schneller und stoßen häufiger und heftiger gegen die Gefäßwände. Dadurch steigt der Druck in der Flasche, die Luft dehnt sich in den Ballon aus.</p>
+      <p>Der Ballon bläht sich auf, sein Volumen vergrößert sich. Das warme Wasser erwärmt die Luft in der Flasche — die <span class="tt" data-tip="Kleinste Bausteine von Gasen und Flüssigkeiten">Teilchen</span> bewegen sich schneller und stoßen häufiger und heftiger gegen die Gefäßwände. Durch die zunehmende Kraftwirkung auf die Gefäßwände steigt der Druck in der Flasche, sodass sich die Luft in den Ballon ausdehnt.</p>
       <div class="quiz-item">
         <div class="quiz-q">Warum bläht sich der Ballon auf, wenn die Flasche erwärmt wird?</div>
         <div class="quiz-opts">
@@ -585,7 +585,7 @@ img{max-width:100%;height:auto;}
       </div>
       <div class="hefter-box">
         <div class="hefter-label">📓 Heftereintrag — Teilchenmodell des Drucks</div>
-        <p>Teilchen bewegen sich ständig ungeordnet und stoßen gegen die Gefäßwände. Diese Stöße erzeugen den Druck — er wirkt an allen Wänden in alle Richtungen gleich.</p>
+        <p>Teilchen bewegen sich ständig ungeordnet und stoßen gegen die Gefäßwände. Druck entsteht durch die Kraftwirkung der Teilchen (Teilchenstöße) auf die Gefäßwände und wirkt in alle Richtungen gleich.</p>
         <p>Der Druck steigt durch: <b>1)</b> mehr Teilchen im gleichen Volumen, <b>2)</b> kleineres Volumen bei gleicher Teilchenzahl, <b>3)</b> schnellere Teilchen.</p>
       </div>
     <div class="subphase-next"><button class="btn btn-primary" onclick="showPhase(3)">Weiter →</button></div>
@@ -679,7 +679,7 @@ img{max-width:100%;height:auto;}
         <button class="btn btn-ghost btn-sm" onclick="matchReset(this)">↺ Zurücksetzen</button>
         <div class="fb grp-fb"></div>
       </div>
-      <div class="callout callout-success">🎉 <span>Die Schneeschuhe verteilen dieselbe Gewichtskraft auf eine achtmal größere Fläche — der Druck auf den Schnee sinkt entsprechend stark, sodass Mara nicht einsinkt. Bei gleicher Kraft ist der Druck umso kleiner, je größer die Auflagefläche ist.</span></div>
+      <div class="callout callout-success">🎉 <span>Die Schneeschuhe verteilen dieselbe Gewichtskraft auf eine achtmal größere Fläche — der Druck auf den Schnee sinkt entsprechend stark, sodass Mara nicht einsinkt. Bei gleicher Gewichtskraft ist der Druck umso kleiner, je größer die Auflagefläche ist.</span></div>
       <div class="hefter-box">
         <div class="hefter-label">📓 Heftereintrag — Auflagedruck</div>
         <p><strong>Auflagedruck:</strong> <i>p</i> = <span class="frac"><span class="num"><i>F<sub>G</sub></i></span><span class="den"><i>A</i></span></span> mit <i>F<sub>G</sub></i> = <i>m</i> · <i>g</i></p>
@@ -687,7 +687,7 @@ img{max-width:100%;height:auto;}
           <tr><td><i>F<sub>G</sub></td><td>Gewichtskraft</td><td>Newton (N)</td></tr>
           <tr><td><i>A</i></td><td>Auflagefläche</td><td>Quadratmeter (m²)</td></tr>
         </table>
-        <p>Bei gleicher Kraft ist der Druck umso kleiner, je größer die Auflagefläche ist — deshalb sinken Schneeschuhe, Skier oder Kettenfahrzeuge weniger ein.</p>
+        <p>Bei gleicher Gewichtskraft ist der Druck umso kleiner, je größer die Auflagefläche ist — deshalb sinken Schneeschuhe, Skier oder Kettenfahrzeuge weniger ein.</p>
       </div>
     <div class="subphase-next"><button class="btn btn-primary" onclick="showPhase(4)">Weiter →</button></div>
     </div>
@@ -849,7 +849,7 @@ img{max-width:100%;height:auto;}
       </div>
       <div class="hefter-box">
         <div class="hefter-label">📓 Heftereintrag — Zusammenfassung</div>
-        <p><i>p</i> = <span class="frac"><span class="num"><i>F</i></span><span class="den"><i>A</i></span></span> — egal ob Auflagedruck fester Körper oder Druck in Gasen/Flüssigkeiten. In Gasen und Flüssigkeiten entsteht der Druck durch Teilchenstöße und wirkt in alle Richtungen gleich. In hydraulischen Anlagen wird dieser gleichmäßig wirkende Druck genutzt, um Kräfte zu übersetzen: <span class="frac"><span class="num"><i>F<sub>1</sub></i></span><span class="den"><i>A<sub>1</sub></i></span></span> = <span class="frac"><span class="num"><i>F<sub>2</sub></i></span><span class="den"><i>A<sub>2</sub></i></span></span>.</p>
+        <p><i>p</i> = <span class="frac"><span class="num"><i>F</i></span><span class="den"><i>A</i></span></span> — egal ob Auflagedruck fester Körper oder Druck in Gasen/Flüssigkeiten. In Gasen und Flüssigkeiten entsteht der Druck durch die Kraftwirkung der Teilchen (Teilchenstöße) auf die Gefäßwände und wirkt in alle Richtungen gleich. In hydraulischen Anlagen wird dieser gleichmäßig wirkende Druck genutzt, um Kräfte zu übersetzen: <span class="frac"><span class="num"><i>F<sub>1</sub></i></span><span class="den"><i>A<sub>1</sub></i></span></span> = <span class="frac"><span class="num"><i>F<sub>2</sub></i></span><span class="den"><i>A<sub>2</sub></i></span></span>.</p>
       </div>
     </div>
   </div>
@@ -866,12 +866,12 @@ img{max-width:100%;height:auto;}
       <div class="acc-item">
         <button class="acc-head" aria-expanded="false" onclick="toggleAcc(this)">
           <span>Teilchenmodell</span><span class="acc-icon">▼</span></button>
-        <div class="acc-body"><div class="acc-body-inner">Druck entsteht durch Teilchenstöße auf die Gefäßwände und wirkt in alle Richtungen gleich.</div></div>
+        <div class="acc-body"><div class="acc-body-inner">Druck entsteht durch Kraftwirkung der Teilchen (Teilchenstöße) auf die Gefäßwände und wirkt in alle Richtungen gleich.</div></div>
       </div>
       <div class="acc-item">
         <button class="acc-head" aria-expanded="false" onclick="toggleAcc(this)">
           <span>Auflagedruck</span><span class="acc-icon">▼</span></button>
-        <div class="acc-body"><div class="acc-body-inner">Bei gleicher Masse ist der Druck umso größer, je kleiner die Auflagefläche ist.</div></div>
+        <div class="acc-body"><div class="acc-body-inner">Bei gleicher Gewichtskraft (gleicher Masse) ist der Druck umso größer, je kleiner die Auflagefläche ist.</div></div>
       </div>
       <div class="acc-item">
         <button class="acc-head" aria-expanded="false" onclick="toggleAcc(this)">
